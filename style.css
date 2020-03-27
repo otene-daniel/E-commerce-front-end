@@ -1,0 +1,180 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 1.5em;
+    background: #42455a;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/*code for header*/
+
+header{
+    border-bottom: orange 3px solid;
+}
+.brand-name{
+    width: 100%;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    font-size: 40px;
+}
+h2{
+    color: orange;
+}
+.nav-bar{
+    display: flex;
+    margin: 2px;
+    padding: 2px;
+}
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: none;
+}
+li{
+    float: left;
+    display: inline;
+    padding: 0 20px 0 20px;
+}
+li a {
+    display: block;
+    color: white;
+    text-align: left;
+    padding: 5px 5px;
+    text-decoration: none;
+}
+li a:hover{
+    background-color:black;
+}
+
+/*code for banner*/
+.app-text{
+    margin: 10px;
+    width: 100%;
+    float: left;
+}
+.app-text h2{
+    font-size: 30px;
+    width: 100%;
+    position: relative;
+    margin-top: 5px;
+}
+.app-text p{
+    width: 640px;
+    font-size: 15px;
+    line-height: 25px;
+    color: #fff;
+    margin-top: 30px;
+}
+
+/* for Picture Gallery*/
+
+.heading-hero{
+    text-align: center;
+    width: 100%;
+    padding: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.gallery{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.gallery-img
+{
+    position: relative;
+    margin: 5px;
+}
+.gallery-img img{
+    max-width: 330px;
+    width: 100%;
+    height: 100%;
+}
+.gallery-img:hover{
+    opacity: .5;
+}
+
+/*newsletter*/
+
+#newsletter{
+    padding: 10px;
+    color: white;
+    background: #35424a;
+}
+#newsletter h1{
+    float: left;
+    font-size: 25px;
+    margin-top: 10px;
+}
+#newsletter form{
+    float: right;
+}
+#newsletter input[type="email"]{
+    padding: 4px;
+    height: 25px;
+    width: 250px; 
+}
+.button_1{
+    height: 38px;
+    background: orange;
+    border: 0;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: white;
+}
+.dark{
+    padding: 15px;
+    background: #35424a;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    color: white;
+   background-color: #35424a;
+   text-align: center; 
+}
+
+/* media queries */
+@media(max-width: 700px){
+    header .brand-name,
+    header .nav-bar,
+    header .brand-name,
+    header .nav-bar li,
+    #newsletter h1,
+    #newsletter form
+    {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    
+    .app-text h2{
+        margin-top: 40px;
+    }
+    header{
+        padding-bottom: 20px;
+    }
+    #newsletter button, .quote button{
+        display: block;
+        width: 100px;
+    }
+    #newsletter form input[type="email"], .quote input, .quote textarea{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
